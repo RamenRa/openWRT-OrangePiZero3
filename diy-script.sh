@@ -4,7 +4,7 @@
 # sed -i 's/192.168.113.8/192.168.1.1/g' package/base-files/files/bin/config_generate
 
 # 修改 LAN 接口为 DHCP 获取 IP 地址
-sed -i 's/option proto static/option proto dhcp/g' package/base-files/files/etc/config/network
+# sed -i 's/option proto static/option proto dhcp/g' package/base-files/files/etc/config/network
 
 # 启用 LAN 接口的 DHCP 服务器
 cat >> package/base-files/files/etc/config/dhcp <<EOF
