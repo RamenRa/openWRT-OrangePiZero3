@@ -12,17 +12,6 @@ awk '{
     print
 }' package/base-files/files/bin/config_generate
 
-
-# 启用 LAN 接口的 DHCP 服务器
-# cat >> package/base-files/files/etc/config/dhcp <<EOF
-# config dhcp 'lan'
-#     option interface 'lan'
-#     option start '100'
-#     option limit '150'
-#     option leasetime '12h'
-#     option ignore '0'
-# EOF
-
 # 更改默认 Shell 为 zsh
 # sed -i 's/\/bin\/ash/\/usr\/bin\/zsh/g' package/base-files/files/etc/passwd
 
