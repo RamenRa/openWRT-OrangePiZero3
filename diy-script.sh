@@ -10,7 +10,8 @@ awk '{
     }
     if (/='\''static'\''/) count++
     print
-}' package/base-files/files/bin/config_generate
+}' package/base-files/files/bin/config_generate > temp && mv temp package/base-files/files/bin/config_generate
+
 
 # 更改默认 Shell 为 zsh
 # sed -i 's/\/bin\/ash/\/usr\/bin\/zsh/g' package/base-files/files/etc/passwd
