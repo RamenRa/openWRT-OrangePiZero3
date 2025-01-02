@@ -13,10 +13,10 @@
 # }' package/base-files/files/bin/config_generate > temp && mv temp package/base-files/files/bin/config_generate
 
 # 添加8188eu驱动
-mkdir -p package/kernel/rtl8188eu
-git clone -b openwrt-24.10 --depth=1 https://github.com/immortalwrt/immortalwrt
-cp -r immortalwrt/package/kernel/rtl8188eu/* package/kernel/rtl8188eu
-rm -rf immortalwrt
+# mkdir -p package/kernel/rtl8188eu
+# git clone -b openwrt-24.10 --depth=1 https://github.com/immortalwrt/immortalwrt
+# cp -r immortalwrt/package/kernel/rtl8188eu/* package/kernel/rtl8188eu
+# rm -rf immortalwrt
 
 
 
