@@ -53,6 +53,8 @@ jobs:
         sudo -E apt-get -y autoremove --purge
         sudo -E apt-get -y clean
         sudo timedatectl set-timezone "$TZ"
+        sudo apt install -y python3-pip
+        sudo pip3 install pyelftools
 
     - name: Combine Disks
       uses: easimon/maximize-build-space@master
