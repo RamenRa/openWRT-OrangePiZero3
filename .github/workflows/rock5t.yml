@@ -1,4 +1,4 @@
-name: zero3 OpenWrt
+name: rock5t OpenWrt
 
 on:
   workflow_dispatch:
@@ -15,7 +15,7 @@ env:
   CACHE_TOOLCHAIN: true
   UPLOAD_BIN_DIR: false
   FIRMWARE_RELEASE: true
-  FIRMWARE_TAG: zero3
+  FIRMWARE_TAG: rock5t
   TZ: Asia/Shanghai
 
 jobs:
